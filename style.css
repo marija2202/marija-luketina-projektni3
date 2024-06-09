@@ -1,0 +1,199 @@
+/* FONTOVI */
+@font-face {
+    font-family: 'Founders Grotesk Light';
+    src: url('fontovi/Founders_Grotesk/FoundersGrotesk-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marija Font';
+    src: url('fontovi/Marija_font/Marija_font.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./slike/gradient_pozadina.png");
+    background-size: cover;
+    background-position: center;
+    color: #27293B;
+    font-size: 18px;
+    font-family: "Founders Grotesk Light", sans-serif;
+}
+
+.container {
+    padding: 0 140px;
+    text-wrap: wrap;
+}
+
+/* NAVIGACIJSKA TRAKA */
+
+nav {
+    padding: 40px 0;
+}
+
+nav, ul {
+    width: 100%;
+}
+
+.logo-container a {
+    display: flex;
+}
+
+.logo-container {
+    margin: 0 auto 0 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+} 
+
+.logo {
+    width: 35px;
+}
+
+nav ul li {
+    transition: transform 0.2s;
+}
+
+nav ul li a {
+    color: #27293B;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:hover {
+    transform: translateY(-2px);
+}
+
+.aktivni-link {
+    text-decoration: underline;
+}
+
+/* HOMEPAGE */
+
+.container h1 {
+    font-size: 140px;
+    letter-spacing: 10px;
+    margin-top: 50px;
+    font-family: "Marija Font", sans-serif;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.opis {
+    width: 85%;
+}
+
+/* O MENI */
+
+.opis-o-meni {
+    margin-top: 20px;
+    background-color: #fcf9ff9d;
+    padding: 30px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.multimedijski-element {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.multimedijski-element div {
+    background: radial-gradient(circle at center, #BCC1E7 , #ADDAED);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 5px;
+    height: 250px;
+    border: 1px solid #27293b2c;
+    transition: transform 0.3s;
+}
+
+.multimedijski-element div img {
+    width: auto;
+    height: 100%;
+}
+
+.multimedijski-element div:hover {
+    transform: scale(1.02);
+}
+
+.pogledaj-vise-button {
+    text-decoration: none;
+    color: #27293B;
+    background-color: #FCF9FF;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 15px 45px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    gap: 20px;
+    margin-top: 50px;
+    transition: transform 0.2s;
+    margin-bottom: 50px;
+}
+
+.pogledaj-vise-button img {
+    width: 25px;
+}
+
+.pogledaj-vise-button:hover {
+    transform: translateY(-5px);
+}
+
+/* VJEŽBE */
+
+.vjezbe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0 100px 0;
+}
+    
+.vjezbe-container img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.vjezbe-container img:hover,
+.vjezbe-container video:hover {
+    transform: scale(1.02);
+}
+
+.vjezbe-video {
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+/* VIDEO */
+
+video {
+    display: block;
+    margin: 50px auto;
+}
